@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website dengan Musik</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            z-index: 1;
+            padding-top: 20%;
+        }
+        .button {
+            display: inline-block;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .whatsapp {
+            background-color: #25D366;
+        }
+        .whatsapp:hover {
+            background-color: #20b857;
+        }
+        .instagram {
+            background-color: #E4405F;
+        }
+        .instagram:hover {
+            background-color: #cc3854;
+        }
+        .discord {
+            background-color: #7289DA;
+        }
+        .discord:hover {
+            background-color: #5b6eae;
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="assets/video/sunset.mp4" type="video/mp4">
+        Browser Anda tidak mendukung elemen video.
+    </video>
+    <audio autoplay loop>
+        <source src="assets/audio/ceria.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    <div class="content">
+        <h1>Selamat Datang!</h1>
+        <p>Link Medsos:</p>
+        <a href="https://wa.me/6281400788258" class="button whatsapp">WhatsApp</a>
+        <a href="https://www.instagram.com/tjmmar" class="button instagram">Instagram</a>
+        <a href="https://discord.com/invite/XS7tFxjkNd" class="button discord">Discord</a>
+    </div>
+</body>
+</html>
